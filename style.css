@@ -1,0 +1,326 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px; /* Adjust this value as per your needs */
+    height: 30px; /* Adjust this value as per your needs */
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 100px; /* Adjust size as needed */
+    font-weight: bold;
+    color: #cd6000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust this value as per your needs */
+}
+
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 2em; /* Adjust size as needed */
+    /* text-align: center; */
+    font-weight: bold;
+    color: #cd6000;
+    font-family:Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+}
+
+.keyword {
+    color: #ffffff; /* Adjust color as needed */
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #954b00;
+    border-radius: 10px;
+    margin: 0.5%;
+    padding: 0.3%;
+}
+
+
+#TagLine {
+    background-color: #ffffff;
+    border-radius: 20px; 
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+#Description {
+    background-color: #ffffff; /* Light blue */
+    border-radius: 20px; /* Adjust as needed */
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+#centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+}
+
+#logo {
+    border-radius: 5%; /* Adjust this value as per your needs */
+}
+
+#ImageDivider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Adjust as needed */
+    background-color: #954b00;
+    border-radius: 15px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#ImageDivider video {
+    border-radius: 15px; /* Adjust as needed */
+    border-color: #000000;
+    border-width: 2px; /* Adjust as needed */
+    border-style: solid; /* Required for the border to show */
+    width: 80%; /* This will make the video take the full width of its container */
+    height: auto; /* This will maintain the aspect ratio of the video */
+}
+
+
+/* #Trust {
+    text-align: center; 
+    padding: 20px; 
+}
+
+#Trust h2 {
+    color: #cd6000; 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+#Trust img {
+    margin: 0 10px; 
+    height: auto; 
+    vertical-align: middle;
+    margin-right: 80px ;
+} */
+
+#Features {
+    text-align: center; /* Center the text */
+}
+
+#Features h2 {
+    color: #cd6000; /* Adjust color as needed */
+    font-size: 50px; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.feature-container {
+    display: flex; /* Use Flexbox */
+    justify-content: space-around; /* Distribute items evenly with equal space around them */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there is not enough space */
+}
+
+.feature {
+    width: 28%; /* Adjust as needed */
+    margin: 10px; /* Adjust as needed */
+    padding: 20px; /* Adjust as needed */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a nice effect */
+    border-radius: 15px;
+    transition: transform 0.3s; /* Smooth transformation */
+}
+
+.feature:hover {
+    transform: scale(1.05); /* Zoom in */
+}
+
+#about {
+    text-align: center; /* Center the text */
+    background-color: #eeeeee; /* Light grey background */
+    padding: 20px; /* Add some padding around the section */
+    border-radius: 15px; /* Optional: round the corners of the section */
+}
+
+#about h2 {
+    color: #cd6000; /* Adjust color as needed */
+    font-size: 50px; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+#about p {
+    font-size: 20px; /* Adjust size as needed */
+    color: #333; /* Dark grey text */
+    line-height: 1.6; /* Improve readability */
+}
+
+#about img {
+    margin-top: 20px; /* Add some space above the image */
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Keep the original aspect ratio */
+    border-radius: 15px; /* Optional: round the corners of the image */
+}
+
+#contact {
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding around the section */
+}
+
+#contact h2 {
+    color: #cd6000; /* Adjust color as needed */
+    font-size: 2em; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactForm label {
+    margin: 10px 0; /* Add some vertical space around the labels */
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"] {
+    width: 80%; /* Adjust as needed */
+    padding: 10px; /* Add some padding inside the inputs */
+    margin-bottom: 20px; /* Add some space below the inputs */
+    border-radius: 5px; /* Optional: round the corners of the inputs */
+}
+
+#contactForm input[type="submit"] {
+    padding: 10px 20px; /* Add some padding inside the button */
+    background-color: #cd6000; /* Adjust color as needed */
+    color: white; /* White text */
+    border: none; /* Remove the default border */
+    cursor: pointer; /* Change the cursor when hovering over the button */
+    border-radius: 5px; /* Optional: round the corners of the button */
+}
+
+#companyInfo {
+    margin-top: 50px; /* Add some space above the company info */
+}
+
+#companyInfo h2 {
+    color: #cd6000; /* Adjust color as needed */
+    font-size: 2em; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Add some space below the heading */
+    text-align: center;
+}
+
+#links {
+    display: flex; /* Use Flexbox */
+    justify-content: space-around; /* Distribute space evenly between the links */
+}
+
+#companyInfo a {
+    color: #cd6000; 
+    text-decoration: none;
+    font-size: 150%;
+    text-align: center; /* Center the text within each link */
+}
+
+#companyInfo img {
+    width: 3%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    vertical-align: middle; /* Align the icon with the middle of the text */
+    margin-right: 10px; /* Add some space to the right of the icon */
+    padding: 1%;
+}
+
+#companyInfo a:hover {
+    color: #ff8800; /* Change the color when hovering over the link */
+}
+
+
+#blog h2{
+    color: #cd6000; 
+    font-size: 350%; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.blog-item {
+    display: flex; /* Use Flexbox */
+    justify-content: space-around; /* Distribute items evenly with equal space around them */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there is not enough space */
+}
+
+.blog-text {
+    width: 50%; /* Adjust as needed */
+    margin: 10px; /* Adjust as needed */
+    padding: 20px; /* Adjust as needed */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a nice effect */
+    border-radius: 15px;
+    transition: transform 0.3s; /* Smooth transformation */
+}
+
+.blog-text:hover {
+    transform: scale(1.05); /* Zoom in */
+}
+
+
+
+
+
+
+
+
+/* Tips for good web design:
+
+* Easy Navigationn
+* Do not make any section cluttered. Have good contrast.*/

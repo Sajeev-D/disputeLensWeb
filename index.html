@@ -21,6 +21,12 @@
         </header>
         <main>
             <section id="TagLine">
+                <img src="document-landscape-orientation.png" alt="Doc logo" id="doc-logo" width=50%>
+                <img src="search.png" alt="Search logo" id="search-logo" width=20%>
+                <img src="curve-down-arrow.png" alt="Arrow logo" id="arrow-logo" width=50%>
+            </section>   
+            
+            <section id="Tagline_sentence">
                 <h1>We are a contract review tool.</h1>
             </section>
 
@@ -107,15 +113,35 @@
         </footer>
         <script src="script.js"></script>
     </body>
+
+    <script>
+        // Your JavaScript code goes here
+        document.getElementById('search-logo').addEventListener('animationend', function() {
+            document.getElementById('doc-logo').style.opacity = '0';
+            document.getElementById('arrow-logo').style.opacity = '1';
+        });
+    </script>
+    
 </html>
 
 <!-- 
     Things to do:
     - Change the icons and create your own since they need to be cited
-    - Include a blog section
     - Connect contact form to a google sheet
     - Change the phot in the baout section
     - Change the story in the about section to reflect the story
     - Change the video to 3 slides for the 3 different slides
     
+
+    - Change the font
+    - Change the clout scheme
+    - Add a footer section for all the things in the website
+
+    - home
+    - hero
+    - about
+    - features
+    - blog
+    - contact
+    - footer
  -->

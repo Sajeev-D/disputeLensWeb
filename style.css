@@ -40,56 +40,70 @@ footer {
     background-color: #333;
     color: #ffffff;
     text-align: center;
-    padding: 10px 0;
-    /* position: fixed; */
-    bottom: 0;
-    width: 100%;
-}
-
-h1 {
-    margin-top: 0;
-    font-size: 100px; /* Adjust size as needed */
-    font-weight: bold;
-    color: #cd6000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Adjust this value as per your needs */
-}
+        padding: 10px 0;
+        /* position: fixed; */
+        bottom: 0;
+        width: 100%;
+    }
 
 
-h3 {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-size: 2em; /* Adjust size as needed */
-    /* text-align: center; */
-    font-weight: bold;
-    color: #cd6000;
-    font-family:Arial, Helvetica, sans-serif;
-    /* text-align: center; */
-}
-
-.keyword {
-    color: #ffffff; /* Adjust color as needed */
-    font-weight: bold;
-    font-size: 40px;
-    background-color: #954b00;
-    border-radius: 10px;
-    margin: 0.5%;
-    padding: 0.3%;
-}
 
 
-#TagLine {
-    background-color: #ffffff;
-    border-radius: 20px; 
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
+    h3 {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-size: 2em; /* Adjust size as needed */
+        /* text-align: center; */
+        font-weight: bold;
+        color: #cd6000;
+        font-family:Arial, Helvetica, sans-serif;
+        /* text-align: center; */
+    }
+
+    .keyword {
+        color: #ffffff; /* Adjust color as needed */
+        font-weight: bold;
+        font-size: 40px;
+        background-color: #954b00;
+        border-radius: 10px;
+        margin: 0.5%;
+        padding: 0.3%;
+    }
+
+
+    #TagLine #doc-logo {
+        /* Add a transition for the opacity */
+        transition: opacity 3s ease-in-out;
+    }
+    
+    #TagLine #search-logo {
+        /* Add an animation delay equal to the duration of the moveInCircle animation */
+        animation-delay: 3s;
+    }
+    
+    #TagLine #arrow-logo {
+        /* Initially hide the arrow logo */
+        opacity: 0;
+        /* Add a transition for the opacity */
+        transition: opacity 3s ease-in-out;
+        /* Add an animation delay equal to the duration of the moveInCircle animation */
+        transition-delay: 3s;
+    }
+    
+    /* Add a keyframes animation for the zoom effect */
+    @keyframes zoomIn {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.5); }
+    }
+    
+    /* Apply the zoomIn animation to the doc logo after the moveInCircle animation is over */
+    #TagLine #doc-logo:after {
+        content: "";
+        display: block;
+        animation: zoomIn 3s forwards;
+        animation-delay: 3s;
+    }
+    
 
 #Description {
     background-color: #ffffff; /* Light blue */
@@ -312,6 +326,8 @@ h3 {
 .blog-text:hover {
     transform: scale(1.05); /* Zoom in */
 }
+
+
 
 
 

@@ -4,13 +4,16 @@
         <title>Dispute Lens</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>    
     <body>
         <header>
             <nav>
-                
-                <ul>
-                    <img src="Logo.jpg" alt="Company Logo" id="logo" width="180">
+                <img src="Logo.jpg" alt="Company Logo" id="logo" width="180">
+                <img src="menu.png" alt="Menu Icon" id="menu-icon" width="30">
+                <ul id="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#Features">Features</a></li>
                     <li><a href="#about">About</a></li>    
@@ -19,12 +22,13 @@
                 </ul>
             </nav>
         </header>
+        
         <main>
-            <section id="TagLine">
+            <!-- <section id="TagLine">
                 <img src="document-landscape-orientation.png" alt="Doc logo" id="doc-logo" width=50%>
                 <img src="search.png" alt="Search logo" id="search-logo" width=20%>
                 <img src="curve-down-arrow.png" alt="Arrow logo" id="arrow-logo" width=50%>
-            </section>   
+            </section>    -->
             
             <section id="Tagline_sentence">
                 <h1>We are a contract review tool.</h1>
@@ -35,16 +39,21 @@
             </section> -->
 
             <section id="ImageDivider">
-                <video width="1500" autoplay loop muted>
-                    <source src="OP2 M2 recording.mp4" type="video/mp4">
+                <video id="backgroundVideo" autoplay loop muted>
+                    <source src="heroVid.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            </section>          
+                <video id="foregroundVideo" autoplay loop muted>
+                    <source src="ScreenRecord.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+                   
             
             <section id="Description">
                 <h3>Dispute Lens is legal <span class="keyword">workflow gamechanger</span>.<br><br>
                     We are  <span class="keyword">introducing AI</span> to the contract drafting and review process.<br><br>
-                    Our software is designed to help you draft and review contracts <span class="keyword">faster and more accurately.</span></h3>            
+                    Our software is designed to help you review contracts <span class="keyword">faster and more accurately.</span></h3>            
             </section>
 <!-- 
             <section id="Trust">
@@ -79,7 +88,7 @@
 
 
             <section id="blog">
-                <h2>The Lews</h2>
+                <h2>In Discussion</h2>
                 <div class="blog-item">
                     <div class="blog-text">
                         <h3>How AI is changing the legal industry</h3>
@@ -115,11 +124,23 @@
     </body>
 
     <script>
-        // Your JavaScript code goes here
-        document.getElementById('search-logo').addEventListener('animationend', function() {
-            document.getElementById('doc-logo').style.opacity = '0';
-            document.getElementById('arrow-logo').style.opacity = '1';
+
+document.addEventListener('DOMContentLoaded', function() {
+        var menuIcon = document.getElementById('menu-icon');
+        var navLinks = document.getElementById('nav-links');
+        var tagline = document.getElementById('Tagline_sentence');
+
+        menuIcon.addEventListener('click', function(event) {
+            event.preventDefault();
+            navLinks.style.display = navLinks.style.display === 'none' ? 'block' : 'none';
+            });
         });
+        
+        // document.getElementById('search-logo').addEventListener('animationend', function() {
+        //     document.getElementById('doc-logo').style.opacity = '0';
+        //     document.getElementById('arrow-logo').style.opacity = '1';
+        // });
+
     </script>
     
 </html>
@@ -144,4 +165,7 @@
     - blog
     - contact
     - footer
+
+
+    - Flip the card
  -->

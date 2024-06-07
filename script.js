@@ -1,13 +1,20 @@
+var menuOpen = false;
+
 document.addEventListener('DOMContentLoaded', function() {
     var menuIcon = document.getElementById('menu-icon');
     var navLinks = document.getElementById('nav-links');
-    var tagline = document.getElementById('Tagline_sentence');
+    // var tagline = document.getElementById('Tagline_sentence');
 
     menuIcon.addEventListener('click', function(event) {
-        event.preventDefault();
-        navLinks.style.display = navLinks.style.display === 'none' ? 'block' : 'none';
-        });
+        if (menuOpen === true) {
+            navLinks.style.display = 'block';
+            menuOpen = false;
+        } else if (menuOpen === false){
+            navLinks.style.display = 'none';
+            menuOpen = true;
+        }       
     });
+    }); 
     
     // document.getElementById('search-logo').addEventListener('animationend', function() {
     //     document.getElementById('doc-logo').style.opacity = '0';

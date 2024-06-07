@@ -28,7 +28,7 @@ header {
     /* other styles */
 }
 
-/* #menu-icon:active ~ #nav-links,  */
+#menu-icon:active ~ #nav-links, 
 #menu-icon:focus ~ #nav-links {
     display: block;
     float: right;
@@ -65,12 +65,30 @@ footer {
     background-color: #333;
     color: #ffffff;
     text-align: center;
-        padding: 10px 0;
-        /* position: fixed; */
-        bottom: 0;
-        width: 100%;
-        border-radius: 15px;
-    }
+    padding: 10px 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    border-radius: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer ul li {
+    display: inline;
+    margin: 5%; /* Adjust this value to add more space between the links */
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 
     h3 {
         margin-top: 50px;

@@ -266,6 +266,7 @@ footer ul li a {
 }
 
 #Features h3{
+    font-size: 30px;
     color: #000000;
 }
 
@@ -423,7 +424,4 @@ footer ul li a {
     transform: scale(1.05); /* Zoom in */
 }
 
-/* Tips for good web design:
-
-* Easy Navigationn
-* Do not make any section cluttered. Have good contrast.*/
+/**********************************End of version 1*********************************/

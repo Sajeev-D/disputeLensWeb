@@ -15,36 +15,19 @@ header {
 
 /******************Top section******************/
 
-/* CSS for the section */
 #top {
     width: 100%;
-    /* padding: 20px; */
     background-color: #ffffff; /* Light grey background */
     border-radius: 10px;
     margin: 2%;
 }
 
-#top img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 5%;
-    width: 40%;
-}
-
-/* CSS for the h1 tag */
-#top h1 {
-    text-align: center;
-    color: #000000;
-    font-size: 270%;
-}
-
-/* CSS for the navigation bar */
 #top nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex; /* Add this line */
-    justify-content: center; /* Add this line */
+    justify-content: space-between; /* Add this line */
     background-color: #ffdbb8; /* Dark grey background */
     border-radius: 10px;
 }
@@ -52,17 +35,21 @@ header {
 #top nav ul li a {
     display: block;
     color: black;
-    
     text-align: center;
     padding: 14px 14px;
     text-decoration: none;
-    /* margin: 5%; */
 }
 
 #top nav ul li a:hover {
     background-color: #007bff; /* Blue background on hover */
-    
 }
+
+#top img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
 
 
 /******************End of top section******************/
